@@ -17,15 +17,22 @@
 			background-color: #FFFF59}
 	</style>
 </head>
+
 <body>
-	<nav>
-		<a href="test1.html">Link to test1</a>|
-		<a href="test2.html">Link to test2</a>|
-		<a href="test3.html">Link to test3</a>|
-		<a href="test4.html">Link to test4</a>|
-</nav>
+	<div id="nav"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$("#nav").load( "nav.html");
+</script>
+
+<a href="test1.html">Link to test1</a>
+	<a href="test2.html">Link to test2</a> 
+	<a href="test3.html">Link to test3</a> 
+	<a href="test4.html">Link to test4</a>  
+
 <p>this is index page</p>
 <p class="important">this is important1</p>
+
 <a href="test1.html">
         <input id="b1" type="button" value="我是按鈕1" style="width:120px;height:40px;font-size:20px;">
     </a>
