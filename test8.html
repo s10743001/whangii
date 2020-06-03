@@ -12,8 +12,36 @@
 </script>
 	<p>this is page8.</p>
 	<form method="get" action="">
+		<label for="phone">your Name</label><br><br>
 		<input type="text" name="id" /><br><br>
-		<input type="password" name="pw" /><br><br>
+		<label for="phone">your paseword(8 digits)</label><br><br>
+		<input type="password" pattern="[a-zA-Z0-9]{8,}"><br><br>
+		<label for="phone">your phone number</label><br><br>
+		<input type="tel" id="phone" name="phone" placeholder="0912-123123" pattern=[0-9]{4}-[0-9]{6}><br><br>
+		<label for="phone">testarea</label><br><br>
+		<textarea style="width:300px;height:100px;">
+　輸入你想要寫的內容...</textarea><br><br>
+<select name="YourLocation">
+　<option value="aaa">科管系</option>
+　<option value="bbb">醫管系</option>
+　<option value="ccc">行管系</option>
+　<option value="ddd">護理系</option>
+ <option value="eee">醫放系</option>
+ <select><br><br>
+<p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+<input type="submit" value="送出表單"/><br><br>
+   <input type="checkbox" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" name="vehicle3" value="Boat" checked>
+  <label for="vehicle3"> I have a boat</label><br><br>
 		<input type="submit" value="送出表單"/>
 	</form>
 
